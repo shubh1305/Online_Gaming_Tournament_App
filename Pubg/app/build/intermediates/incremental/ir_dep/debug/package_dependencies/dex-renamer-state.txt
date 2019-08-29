@@ -1,0 +1,7 @@
+#Sun Aug 18 08:21:28 IST 2019
+base.0=C\:\\Users\\John Doe\\Desktop\\Project\\Pubg\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=C\:\\Users\\John Doe\\Desktop\\Project\\Pubg\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10

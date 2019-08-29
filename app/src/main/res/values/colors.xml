@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#307A83</color>
+    <color name="colorPrimaryDark">#307A83</color>
+    <color name="colorAccent">#2874EE</color>
+    <color name="editTextBG">#DADADA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="textColor">#6e6e6e</color>
+    <color name="facebookBlue">#3F5996</color>
+    <color name="twitterBlue">#3d7de5</color>
+    <color name="googleRed">#D03E2F</color>
+    <color name="shimmer_gray1">#DFDDE0</color>
+    <color name="shimmer_gray">#5B5F6B</color>
+    <color name="cardview_color">#656975</color>
+    <color name="coin">#dddddd</color>
+
+    <color name="playzon_blue_detail">#3496B7</color>
+    <!--RGB code:	R: 52 G: 150 B: 183-->
+    <color name="playzon_blue_background">#23283B</color>
+    <!--RGB code:	R: 35 G: 40 B: 59-->
+
+    <color name="bg_darkblue">#0d2347</color>
+    <!--rgb(13, 35, 71)-->
+
+    <color name="background">#EEEEEE</color>
+    <color name="bg">#0066CC</color>
+    <color name="main">#FFB300</color>
+    <color name="navbar">#2874EE</color>
+    <color name="statusbar">#307A83</color>
+    <color name="toolbar">#307A83</color>
+
+
+    <color name="white_shed">#EEEEEE</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name = "sky_blue">#326684</color>
+    <color name="green">#4B8B3B</color>
+    <color name="gray">#696969</color>
+    <color name="view">#5B5F6B</color>
+    <color name="view_bg">#656975</color>
+    <color name="dark_gray">#282828</color>
+</resources>

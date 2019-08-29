@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Playadda247</string>
+    <string name="loginHere">Already a member? <b>Login Here</b></string>
+    <string name="signUpHere">Don\'t have an account? <b>Sign Up</b></string>
+    <string name="forgotPassword">Forgot Password? <b>Reset Now</b></string>
+    <string name="passwordresetmessage">Password reset link is sent to your registered email address. Please check and click on the link to reset your password.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="joining_match_no_join">You don\'t have enough Play Coins. Kindly purchase some Play Coins inorder to join this match.</string>
+    <string name="joining_match_join">You have enough Play Coins to join this match.</string>
+
+    <string name="join_dialog_txt1">\u25CF Make sure you have set your PubG Username(IGN) and not Character ID.</string>
+    <string name="join_dialog_txt2">\u25CF Above PubG Username should match the username in Edit Profile Section.</string>
+    <string name="join_dialog_txt3">\u25CF You can update your Pubg Username in Edit Profile Section</string>
+    <string name="join_dialog_txt4">\u25CF No new PubG Account is allowed. PubG Accounts with Level > 40 are allowed.</string>
+    <string name="join_dialog_acknowledgement">By participating, you accept the Fair Play Policy.</string>
+    <string name="dialog_join_done">You have successfully joined the match. Room ID and Password will be shared to you 15 minutes before the match start time.</string>
+    <string name="about_match_1"><b>\u25CF</b> No new PUBG accounts are allowed. PUBG accounts with level less than 40 are not allowed to participate.
+        Such participants will be kicked out from the room and they will not be given refund.</string>
+    <string name="about_match_2"><b>\u25CF</b> If in anyway, you fail to join the room by the match start time then we are not responsible
+    for it. In such cases, Refund will not be processed. So make sur to join on time.</string>
+    <string name="about_match_3"><b>\u25CF</b> Do not share the Room ID &amp; Password with anyone who has not joined the match.
+    If you are found doing so, your account may get terminated and all the winnings will be lost.</string>
+    <string name="about_match_4"><b>\u25CF</b> Griefing &amp; Teaming is against the game rules. Any participants found doing so,
+    will be disqualified and their orizes will be lost.</string>
+    <string name="about_match_5"><b>\u25CF</b> Room ID &amp; Password will be shared in the app before 15 minutes of Match Start Time.</string>
+    <string name="about_match_6"><b>\u25CF</b> Match will start after 15 minutes of sharing Room ID &amp; Password</string>
+    <string name="about_match_7"><b>\u25CF</b> Make sure to grab Room ID &amp; Password before the Match Start Time</string>
+    <string name="about_match_8"><b>\u25CF</b> Make sure you join the Match Room ASAP, before the match starts.</string>
+    <string name="about_match_9"><b>\u25CF</b> This match is a Paid Match. To participate, you have to pay the entry fee.
+    There are total 100 spots available. Join it before all the spots are filled.</string>
+    <string name="about_match_10"><b>\u25CF</b> Please note that the listed entry fee is per individual and not the squad/duo team</string>
+    <string name="about_match_11"><b>\u25CF</b> Each member of a team (Squad or Duo) has to pay the entry fee and register individually for
+    the match or tournament.</string>
+    <string name="about_match_12"><b>\u25CF</b> Once you join the match custom room, do not keep changing your position. If you do so,
+    you may get kicked out from the Room.</string>
+    <string name="about_match_13"><b>\u25CF</b> Spots are given on the basis of First Come First Get.</string>
+    <string name="about_match_14"><b>\u25CF</b> Last standing man gets the Chicken Dinner Award.</string>
+    <string name="about_match_15"><b>\u25CF</b> You will be also rewarded for each kill. Check the rewards details above.</string>
+    <string name="about_match_16"><b>\u25CF</b> Use only Mobile Devices to join Match. Do not use any Hacks or Emulators.</string>
+    <string name="about_match_17"><b>\u25CF</b> If anyone found violating these rules then immediate action will be taken
+    and respective accounts may get banned and rewards may be abandoned.</string>
+    <string name="about_match_18"><b>\u25CF</b> If you have any queries then contact us on contact@shubham.com</string>
+    <string name="about_match_19"><b>\u25CF</b> Also, if you want to arrange Giveaway or Sponser any such match then drop us a mail
+    at contact@shubham.com</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+
+    <string name="referral_msg">Share your referral code and invite your friends to earn 10 PlayCoins when they join first match. Your friends will also get 5 PlayCoins as Signup Bonus.</string>
+    <string name="invite">Invite your friends to sign up</string>
+    <string name="invite2">Your friends register and get rewarded</string>
+    <string name="invite3">Join a match and you get rewarded</string>
+    <string name="term"><u><b>Terms of Service</b></u></string>
+    <string name="share_message">Addicted to PUBG! Want to make some csh out of it? Try out PlayAdda247, an eSports Platform.
+        Join daily PUBG matches &amp; get rewards on each kill you score. Get huge prize on getting chicken dinner. Just download the
+    PlayAdda247 android app &amp; register using the Referral code given below to get Rs 5 free sign up bonus.</string>
+    <string name="term_refer">*T&amp;C</string>
+</resources>

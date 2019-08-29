@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:background="@drawable/dialog_bg"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@drawable/title_curved"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Confirm PubG Username"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="30dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dialog_til_reset_registered_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PubG Username"
+            android:theme="@style/TextLabel">
+            <EditText
+                android:id="@+id/join_dialog_et_pubgusername"
+                android:layout_width="match_parent"
+                android:inputType="textNoSuggestions|textEmailAddress"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/join_dialog_tv_error_msg"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:inputType="text"
+            android:textColor="@color/googleRed"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/join_dialog_txt1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/join_dialog_txt2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/join_dialog_txt3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/join_dialog_txt4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/join_dialog_acknowledgement"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/join_dialog_btn_cancel"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_button_gray"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="CANCEL"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"/>
+
+            <Button
+
+                android:id="@+id/join_dialog_btn_join"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="@drawable/my_button"
+                android:text="JOIN"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

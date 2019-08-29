@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_earn"
+        android:icon="@drawable/ic_rupee_indian"
+        android:title="Earn"
+        />
+    <item
+        android:id="@+id/menu_ongoing"
+        android:icon="@drawable/ic_stopwatch"
+        android:title="Ongoing"
+        />
+    <item
+        android:id="@+id/menu_play"
+        android:icon="@drawable/ic_gamepad"
+        android:title="Play"
+        />
+    <item
+        android:id="@+id/menu_result"
+        android:icon="@drawable/ic_test"
+        android:title="Result"
+        />
+    <item
+        android:id="@+id/menu_me"
+        android:icon="@drawable/ic_man_user"
+        android:title="Account"
+        />
+
+</menu>

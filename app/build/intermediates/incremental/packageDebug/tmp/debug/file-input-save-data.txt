@@ -1,0 +1,27 @@
+#Internal package file, do not edit.
+#Sun Aug 25 15:50:24 IST 2019
+2.base=C\:\\Users\\ShubhamRaj\\Desktop\\project\\Pubg\\app\\build\\intermediates\\merged_assets\\debug\\out
+5.set=DEX
+0.path=fonts/RobotoCondensed-Light.ttf
+2.baseType=DIRECTORY
+3.base=C\:\\Users\\ShubhamRaj\\Desktop\\project\\Pubg\\app\\build\\intermediates\\merged_assets\\debug\\out
+2.set=ASSET
+1.path=classes.dex
+4.base=C\:\\Users\\ShubhamRaj\\Desktop\\project\\Pubg\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+count=6
+5.baseType=DIRECTORY
+2.path=fonts/Roboto-Medium.ttf
+5.base=C\:\\Users\\ShubhamRaj\\Desktop\\project\\Pubg\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+4.set=DEX
+3.path=fonts/Roboto.ttf
+3.baseType=DIRECTORY
+1.set=DEX
+4.path=classes2.dex
+1.baseType=DIRECTORY
+5.path=classes.dex
+0.base=C\:\\Users\\ShubhamRaj\\Desktop\\project\\Pubg\\app\\build\\intermediates\\merged_assets\\debug\\out
+0.baseType=DIRECTORY
+3.set=ASSET
+1.base=C\:\\Users\\ShubhamRaj\\Desktop\\project\\Pubg\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+4.baseType=DIRECTORY
+0.set=ASSET

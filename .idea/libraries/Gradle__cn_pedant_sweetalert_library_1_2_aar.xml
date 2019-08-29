@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.pedant.sweetalert:library:1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/074c43c4fc83dfb8435a3e4794abf95a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/074c43c4fc83dfb8435a3e4794abf95a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.pedant.sweetalert/library/1.2/cd658a904214ef3464bab29ab481a17c1821be92/library-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
