@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".MyStatsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/activity_my_stats_appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activity_my_stats_toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@android:color/white"
+            app:title="My Statistics"
+            android:elevation="5dp"
+            android:background="@color/toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/activity_my_stats_lin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/dog3"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Match Found!"
+                android:textColor="@color/main"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="You didn't played any matches yet. Join our daily battles to win real paytm money."/>
+
+
+        </LinearLayout>
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/activity_my_stats_nsv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:background="@color/main">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:text="My Played Match Details"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:gravity="center"
+                            android:background="@color/playzon_blue_detail"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#"
+                                    android:textColor="@color/white"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="17">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:layout_weight="5">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Match Info     "
+                                        android:textSize="18dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/white"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="6">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Kills"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/white"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="6">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Winning"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/white"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/activity_my_stats_rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.hassanusman:CircularDialogs:1.2@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fb925c257f8d988a10fe63f6ba36bd03/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fb925c257f8d988a10fe63f6ba36bd03/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fb0ed9fa8a05b337822b1392c8283fec/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fb0ed9fa8a05b337822b1392c8283fec/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

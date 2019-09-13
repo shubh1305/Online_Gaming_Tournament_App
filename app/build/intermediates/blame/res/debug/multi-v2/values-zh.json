@@ -4,7 +4,17 @@
             "outputFile": "C:\\Users\\ShubhamRaj\\Desktop\\project\\Pubg\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ShubhamRaj\\.gradle\\caches\\transforms-2\\files-2.1\\1d9a90eb612776c643fb696ba57c206f\\res\\values-zh\\values-zh.xml",
+                    "source": "C:\\Users\\ShubhamRaj\\.gradle\\caches\\transforms-2\\files-2.1\\f2472b4aa25ed9bdfec4291668930b1c\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,107,169,232",
+                        "endColumns": "51,61,62,64",
+                        "endOffsets": "102,164,227,292"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ShubhamRaj\\.gradle\\caches\\transforms-2\\files-2.1\\0a71611014aaa420230fcb1239d4e123\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -18,16 +28,6 @@
                         "startOffsets": "297,351,405",
                         "endColumns": "53,53,46",
                         "endOffsets": "346,400,447"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ShubhamRaj\\.gradle\\caches\\transforms-2\\files-2.1\\2c5b0b47521afeb7320b8e0522d5f71a\\res\\values-zh\\values-zh.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,107,169,232",
-                        "endColumns": "51,61,62,64",
-                        "endOffsets": "102,164,227,292"
                     }
                 }
             ]

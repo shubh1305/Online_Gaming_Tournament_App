@@ -1,8 +1,11 @@
 package com.example.pubgbattle;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -38,6 +41,7 @@ public class MainActivity extends AppCompatActivity
 
     private static final String TAG = "FirebaseInstanceID";
     public static Activity mainActivity;
+    private String version;
 
     private TextView tv_wallet;
 
@@ -51,7 +55,8 @@ public class MainActivity extends AppCompatActivity
     private Toolbar toolbar;
     private CardView cardView;
     private ConnectivityReceiver connectivityReceiver;
-
+    private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference databaseReference;
 
     //private CurvedBottomNavigationView curvedBottomNavigationView;
     private BottomNavigationView bottomNavigationView;
@@ -66,6 +71,57 @@ public class MainActivity extends AppCompatActivity
         toolbar = findViewById(R.id.activity_main_toolbar);
         setSupportActionBar(toolbar);
         connectivityReceiver = new ConnectivityReceiver();
+
+        try {
+            version = this.getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
+
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference("Version").child("versionName");
+
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String versionName = (String) dataSnapshot.getValue();
+
+                if(!versionName.equals(version)){
+                    //Toast.makeText(MainActivity.this, "Successful", Toast.LENGTH_SHORT).show();
+
+                    AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this)
+                            .setTitle("New Version Available")
+                            .setMessage("Please update to new version to continue use")
+                            .setPositiveButton("UPDATE", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    startActivity(new Intent(MainActivity.this, UpdateAppActivity.class));
+                                    finish();
+                                }
+                            })
+                            .setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    finish();
+                                }
+                            })
+                            .create();
+
+                    alertDialog.setCancelable(false);
+                    alertDialog.setCanceledOnTouchOutside(false);
+
+                    alertDialog.show();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+
 
 
         mAuth = FirebaseAuth.getInstance();

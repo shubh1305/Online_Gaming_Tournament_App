@@ -2,6 +2,7 @@ package com.example.pubgbattle;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 
 import android.content.SharedPreferences;
@@ -41,7 +42,7 @@ import java.awt.font.TextAttribute;
 import am.appwise.components.ni.NoInternetDialog;
 
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity /*implements UpdateHelper.OnUpdateCheckListner*/ {
     //defining views
     private EditText et_email, et_password;
     private Button btn_frgt, btn_signIn, btn_visible, btn_reset, btn_cancel, btn_done;
@@ -64,7 +65,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
         noInternetDialog = new NoInternetDialog.Builder(this).build();
+
+        //UpdateHelper.with(this).onUpdateCheck(this).check();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = getWindow();
@@ -302,6 +306,27 @@ public class LoginActivity extends AppCompatActivity {
         }
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
+
+    /*@Override
+    public void onUpdateCheckListner(String urlApp) {
+        //create alert dialog
+        AlertDialog alertDialog = new AlertDialog.Builder(this)
+                .setTitle("New Version Available")
+                .setMessage("Please update to new version to continue use")
+                .setPositiveButton("UPDATE", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                })
+                .setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                }).create();
+        alertDialog.show();
+    }*/
 
     //********** Text Watcher for Validation *******************//
     private class MyTextWatcher implements TextWatcher {

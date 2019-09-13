@@ -67,7 +67,7 @@ public class ReferEarnActivity extends AppCompatActivity {
                     String shareMessage= "Addicted to PUBG! Want to make some cash out of it? Try out PlayAdda247, an eSports Platform. ";
                     shareMessage = shareMessage + "Join daily PUBG matches & get rewards on each kill you score." ;
                     shareMessage = shareMessage+ "Get huge prize on getting Chicken Dinner. Just download the PlayAdda247 android app & register using the Referral Code given below to get Rs 5 free sign up bonus.\n";
-                    shareMessage = shareMessage + "\nDownload Link: https://download.playadda247.com"+"\n\nReferral Code: "+tv_referral_code.getText().toString().trim();
+                    shareMessage = shareMessage + "\nDownload Link: https://playadda247.com/download"+"\n\nReferral Code: "+tv_referral_code.getText().toString().trim();
                     shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
                     startActivity(Intent.createChooser(shareIntent, "Share using"));
                 }

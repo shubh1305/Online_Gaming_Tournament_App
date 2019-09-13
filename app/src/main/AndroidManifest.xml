@@ -3,19 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.pubgbattle">
 
-    <uses-permission android:name="android.permission.READ_SMS" />
-    <uses-permission android:name="android.permission.RECEIVE_SMS" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-
-    <uses-feature android:name="android.hardware.wifi" />
-    <uses-feature android:name="android.hardware.camera" />
-
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -24,18 +11,44 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:theme">
-        <activity android:name=".MyReferralsActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".PaymentActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ReferEarnActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ImagePickerActivity" android:screenOrientation="portrait" />
-        <activity android:name=".TransactionActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".RedeemActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".BuyCoinActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".WalletActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".MatchResultActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".OngoingMatchDetailActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".JoiningMatchActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".UpcomingMatchDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".UpdateAppActivity"></activity>
+        <activity android:name=".MyStatsActivity" />
+        <activity
+            android:name=".MyReferralsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReferEarnActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ImagePickerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransactionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RedeemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BuyCoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MatchResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OngoingMatchDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JoiningMatchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpcomingMatchDetailActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".EditProfileActivity"
             android:screenOrientation="portrait" />
@@ -54,17 +67,13 @@
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait" />
-
-        <receiver
-            android:name=".ConnectivityReceiver"
-            android:enabled="true" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" /> <!-- uCrop cropping activity -->
-        <activity
-            android:name="com.yalantis.ucrop.UCropActivity"
-            android:screenOrientation="portrait" /> <!-- cache directory file provider paths -->
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -73,7 +82,12 @@
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
-        </provider>
+        </provider> <!-- cache directory file provider paths -->
+
+
+        <receiver
+            android:name=".ConnectivityReceiver"
+            android:enabled="true" />
 
         <service android:name=".services.MyFirebaseMessagingService">
             <intent-filter>
@@ -81,5 +95,20 @@
             </intent-filter>
         </service>
     </application>
+    <uses-feature android:name="android.hardware.wifi" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
 </manifest>

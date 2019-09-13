@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: io.supercharge:shimmerlayout:2.1.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7a26890178eb88a89c04727e7f41d1f4/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7a26890178eb88a89c04727e7f41d1f4/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fea5dbd0e1ac8dafd43b648e3b32f433/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fea5dbd0e1ac8dafd43b648e3b32f433/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

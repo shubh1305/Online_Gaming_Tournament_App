@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: am.appwise.components:NoInternetDialog:1.1.3@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a898eaaccfa67c30c7fa5a8b8156374d/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f9ff7503e7bb224957f91b9fb0baa418/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a898eaaccfa67c30c7fa5a8b8156374d/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a898eaaccfa67c30c7fa5a8b8156374d/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f9ff7503e7bb224957f91b9fb0baa418/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f9ff7503e7bb224957f91b9fb0baa418/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

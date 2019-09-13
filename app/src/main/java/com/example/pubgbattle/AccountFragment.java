@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Point;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
@@ -29,10 +30,13 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.view.ContextThemeWrapper;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -41,6 +45,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.circulardialog.CDialog;
 import com.example.circulardialog.extras.CDConstants;
@@ -88,6 +94,8 @@ import io.supercharge.shimmerlayout.ShimmerLayout;
  */
 public class AccountFragment extends Fragment {
 
+    private Point p;;
+    private static final String NUMBER = "+91 9380489153";
     private static final int REQUEST_IMAGE = 100;
     private static final String CHANNEL_ID = "default";
     private static final CharSequence CHANNEL_NAME = "InApp";
@@ -95,7 +103,7 @@ public class AccountFragment extends Fragment {
     private TextView tv_name, tv_userName, tv_playCoins, tv_matchPlayed, tv_totalKills, tv_totalWinnings;
     private CardView cv_refer, cv_myprofile, cv_mystats, cv_mywallet,
             cv_top_players, cv_updates, cv_aboutus, cv_support, cv_shareapp, cv_logout;
-    private ImageView iv_profilepic, iv_upload_profile_pic;
+    private ImageView iv_profilepic, iv_upload_profile_pic, iv_support_popup;
     private static final String TAG = MainActivity.class.getSimpleName();
     private NoInternetDialog noInternetDialog;
     private ShimmerLayout shimmerLayout;
@@ -164,6 +172,7 @@ public class AccountFragment extends Fragment {
         cv_aboutus = view.findViewById(R.id.fragment_account_cv_aboutus);
         cv_logout = view.findViewById(R.id.fragment_account_cv_logout);
         shimmerLayout = view.findViewById(R.id.fragmant_account_shimmer_layout);
+        iv_support_popup = view.findViewById(R.id.fragment_account_support_popup);
 
 
         //init firebase Authentication
@@ -214,7 +223,7 @@ public class AccountFragment extends Fragment {
                     String shareMessage= "Do you know, you can win free paytm cash by playing PUBG.\n\n";
                     shareMessage = shareMessage + "Yes! Now get paid for every kill. Not only this, if you get Chicken Dinner, you really win big prizes.\n\n" ;
                     shareMessage = shareMessage+ "Just download & try PlayAdda247.\n\n";
-                    shareMessage = shareMessage + "Download Link: https://download.playadda247.com\n";
+                    shareMessage = shareMessage + "Download Link: https://playadda247.com/download\n";
                     shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
                     startActivity(Intent.createChooser(shareIntent, "Share using"));
                 }
@@ -269,12 +278,119 @@ public class AccountFragment extends Fragment {
         cv_mystats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(getActivity(), MyStatsActivity.class));
+            }
+        });
+
+        cv_support.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //showPopupMenu(cv_support, true, R.style.MyPopupStyle);
+                //init the wrapper with style
+                Context wrapper = new ContextThemeWrapper(getActivity(), R.style.MyPopupStyle);
+
+                //init the popup
+                PopupMenu popup = new PopupMenu(wrapper, v);
+
+                try {
+                    Field[] fields = popup.getClass().getDeclaredFields();
+                    for (Field field : fields) {
+                        if ("mPopup".equals(field.getName())) {
+                            field.setAccessible(true);
+                            Object menuPopupHelper = field.get(popup);
+                            Class<?> classPopupHelper = Class.forName(menuPopupHelper.getClass().getName());
+                            Method setForceIcons = classPopupHelper.getMethod("setForceShowIcon", boolean.class);
+                            setForceIcons.invoke(menuPopupHelper, true);
+                            break;
+                        }
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+                //inflate menu
+                popup.getMenuInflater().inflate(R.menu.support_menu, popup.getMenu());
+
+                //implement click events
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem menuItem) {
+                        switch (menuItem.getItemId()) {
+                            case R.id.support_facebook:
+                                Uri uri = Uri.parse("https://m.me/playadda247"); // missing 'http://' will cause crashed
+                                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                                startActivity(intent);
+                                //Toast.makeText(getActivity(), "Facebook clicked", Toast.LENGTH_SHORT).show();
+                                break;
+                            case R.id.support_whatsapp:
+                                String url = "https://api.whatsapp.com/send?phone="+NUMBER;
+                                Intent i = new Intent(Intent.ACTION_VIEW);
+                                i.setData(Uri.parse(url));
+                                startActivity(i);
+                                //Toast.makeText(getActivity(), "Whatsapp clicked", Toast.LENGTH_SHORT).show();
+                                break;
+                        }
+                        return true;
+                    }
+                });
+                popup.show();
 
             }
         });
         CreateNotificationChannel();
         return view;
     }
+
+    /*private void showPopupMenu(View anchor, boolean isWithIcons, int style) {
+        //init the wrapper with style
+        Context wrapper = new ContextThemeWrapper(getActivity(), style);
+
+        //init the popup
+        PopupMenu popup = new PopupMenu(wrapper, anchor);
+
+        // The below code in try catch is responsible to display icons
+        if (isWithIcons) {
+            try {
+                Field[] fields = popup.getClass().getDeclaredFields();
+                for (Field field : fields) {
+                    if ("mPopup".equals(field.getName())) {
+                        field.setAccessible(true);
+                        Object menuPopupHelper = field.get(popup);
+                        Class<?> classPopupHelper = Class.forName(menuPopupHelper.getClass().getName());
+                        Method setForceIcons = classPopupHelper.getMethod("setForceShowIcon", boolean.class);
+                        setForceIcons.invoke(menuPopupHelper, true);
+                        break;
+                    }
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        //inflate menu
+        popup.getMenuInflater().inflate(R.menu.support_menu, popup.getMenu());
+
+        //implement click events
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+                switch (menuItem.getItemId()) {
+                    case R.id.support_facebook:
+                        Uri uri = Uri.parse("https://m.me/playadda247"); // missing 'http://' will cause crashed
+                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                        startActivity(intent);
+                        //Toast.makeText(getActivity(), "Contact us clicked", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.support_whatsapp:
+                        Toast.makeText(getActivity(), "Terms and Conditions clicked", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                return true;
+            }
+        });
+        popup.show();
+
+    }*/
 
     /**
      * Showing Alert Dialog with Settings option

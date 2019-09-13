@@ -8,6 +8,9 @@
         android:minSdkVersion="19"
         android:targetSdkVersion="28" />
 
+    <uses-feature android:name="android.hardware.wifi" />
+    <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -16,11 +19,8 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-
-    <uses-feature android:name="android.hardware.wifi" />
-    <uses-feature android:name="android.hardware.camera" />
-
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
@@ -32,7 +32,10 @@
         android:icon="@drawable/ic_launcher3"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.pubgbattle.UpdateAppActivity" />
+        <activity android:name="com.example.pubgbattle.MyStatsActivity" />
         <activity
             android:name="com.example.pubgbattle.MyReferralsActivity"
             android:screenOrientation="portrait" />
@@ -87,17 +90,13 @@
         <activity
             android:name="com.example.pubgbattle.MainActivity"
             android:screenOrientation="portrait" />
-
-        <receiver
-            android:name="com.example.pubgbattle.ConnectivityReceiver"
-            android:enabled="true" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" /> <!-- uCrop cropping activity -->
-        <activity
-            android:name="com.yalantis.ucrop.UCropActivity"
-            android:screenOrientation="portrait" /> <!-- cache directory file provider paths -->
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.example.pubgbattle.provider"
@@ -106,7 +105,11 @@
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
-        </provider>
+        </provider> <!-- cache directory file provider paths -->
+
+        <receiver
+            android:name="com.example.pubgbattle.ConnectivityReceiver"
+            android:enabled="true" />
 
         <service android:name="com.example.pubgbattle.services.MyFirebaseMessagingService" >
             <intent-filter>
@@ -117,12 +120,6 @@
         <activity
             android:name="com.karumi.dexter.DexterActivity"
             android:theme="@style/Dexter.Internal.Theme.Transparent" />
-
-        <provider
-            android:name="com.squareup.picasso.PicassoProvider"
-            android:authorities="com.example.pubgbattle.com.squareup.picasso"
-            android:exported="false" />
-
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"
@@ -193,6 +190,11 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.pubgbattle.com.squareup.picasso"
+            android:exported="false" />
 
         <activity
             android:name="com.paytm.pgsdk.PaytmPGActivity"

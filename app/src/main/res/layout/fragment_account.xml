@@ -553,6 +553,7 @@
                             android:textSize="18dp"
                             />
                         <ImageView
+                            android:id="@+id/fragment_account_support_popup"
                             android:layout_marginLeft="15dp"
                             android:layout_marginRight="25dp"
                             android:layout_width="wrap_content"

@@ -52,6 +52,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "575843916366-qlr7a2ctepfljonmmrd9c3p48c1eeou4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pubgbattle",
+            "certificate_hash": "cfe7b96fe12c1067d245fcb96f7b089501d3da23"
+          }
+        },
+        {
           "client_id": "575843916366-epeaes24tnnb67b7au5cb34ufh6gkf0e.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

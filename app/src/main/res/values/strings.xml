@@ -60,5 +60,7 @@
     <string name="share_message">Addicted to PUBG! Want to make some csh out of it? Try out PlayAdda247, an eSports Platform.
         Join daily PUBG matches &amp; get rewards on each kill you score. Get huge prize on getting chicken dinner. Just download the
     PlayAdda247 android app &amp; register using the Referral code given below to get Rs 5 free sign up bonus.</string>
+    <string name="write_file">This app needs access to your file storage so that it can write files.</string>
     <string name="term_refer">*T&amp;C</string>
+    <string name="note">Note: In order to continue using the app, you must have to update the app to the latest version.</string>
 </resources>

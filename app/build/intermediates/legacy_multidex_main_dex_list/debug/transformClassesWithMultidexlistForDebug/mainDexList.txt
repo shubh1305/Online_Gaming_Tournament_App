@@ -491,6 +491,7 @@ org/jetbrains/annotations/Nullable.class
 org/jetbrains/annotations/PropertyKey.class
 org/jetbrains/annotations/TestOnly.class
 org/reactivestreams/Publisher.class
+pub/devrel/easypermissions/AfterPermissionGranted.class
 retrofit2/http/Body.class
 retrofit2/http/DELETE.class
 retrofit2/http/Field.class

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Aug 25 15:50:24 IST 2019
+#Fri Sep 13 20:18:17 IST 2019
 2.base=C\:\\Users\\ShubhamRaj\\Desktop\\project\\Pubg\\app\\build\\intermediates\\merged_assets\\debug\\out
 5.set=DEX
 0.path=fonts/RobotoCondensed-Light.ttf

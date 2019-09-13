@@ -425,6 +425,7 @@ public class JoiningMatchActivity extends AppCompatActivity {
                                 }
                             });
                             myRefMatch.updateChildren(update);
+                            myRefMatch.child("isDone").setValue("n");
                         }
 
                         @Override
