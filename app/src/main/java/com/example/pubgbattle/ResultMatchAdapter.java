@@ -51,7 +51,7 @@ public class ResultMatchAdapter extends RecyclerView.Adapter<ResultMatchAdapter.
         px = Math.round(TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_DIP, 12,r.getDisplayMetrics()));
         px2 = Math.round(TypedValue.applyDimension(
-                TypedValue.COMPLEX_UNIT_DIP, 180,r.getDisplayMetrics()));
+                TypedValue.COMPLEX_UNIT_DIP, 200,r.getDisplayMetrics()));
         return new ResultMatchAdapter.MyViewHolder(LayoutInflater.from(context).inflate(R.layout.result_cardview, viewGroup, false));
 
     }

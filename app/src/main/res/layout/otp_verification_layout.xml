@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="10dp"
+    android:background="@drawable/dialog_bg"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:id="@+id/otp_verification_layout_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="@drawable/title_curved"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Verification Code"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Please type the verification sent to"/>
+            <TextView
+                android:id="@+id/otp_verification_layout_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginBottom="40dp"
+                android:text="+91XXXXXXXX19"/>
+
+            <in.aabhasjindal.otptextview.OtpTextView
+                android:id="@+id/otp_verification_layout_otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:textColor="#808080"
+                app:height="40dp"
+                app:width="40dp"
+                app:bar_enabled="true"
+                app:bar_height="2dp"
+                app:length="6"
+                app:otp_text_size="24dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/otp_verification_layout_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="20dp"
+                    android:textSize="18sp"
+                    android:elevation="1dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/my_button_blue">
+
+                </Button>
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/otp_verification_layout_avi"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/otp_verification_layout_btn"
+                    style="@style/AVLoadingIndicatorView"
+                    android:visibility="visible"
+                    android:elevation="2dp"
+                    app:indicatorName="BallPulseIndicator"
+                    app:indicatorColor="@color/white"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

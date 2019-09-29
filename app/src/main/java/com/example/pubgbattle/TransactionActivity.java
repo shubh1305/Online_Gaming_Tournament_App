@@ -1,5 +1,6 @@
 package com.example.pubgbattle;
 
+import android.app.ProgressDialog;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.annotation.NonNull;
@@ -11,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -35,6 +37,7 @@ public class TransactionActivity extends AppCompatActivity {
     private RecyclerView rv_transaction;
     private ArrayList<TransactionDetail> transactionDetails;
     private TransactionAdapter transactionAdapter;
+    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +66,9 @@ public class TransactionActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("just a sec...");
+        progressDialog.show();
 
         //firebase
         firebaseAuth = FirebaseAuth.getInstance();
@@ -99,10 +105,13 @@ public class TransactionActivity extends AppCompatActivity {
                     }
                 });
                 transactionAdapter.notifyDataSetChanged();
+                progressDialog.dismiss();
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(TransactionActivity.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
+                progressDialog.dismiss();
 
             }
         });

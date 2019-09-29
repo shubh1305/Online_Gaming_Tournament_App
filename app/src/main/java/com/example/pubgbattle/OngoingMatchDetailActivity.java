@@ -2,11 +2,13 @@ package com.example.pubgbattle;
 
 import android.app.ProgressDialog;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.widget.NestedScrollView;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -54,6 +56,8 @@ public class OngoingMatchDetailActivity extends AppCompatActivity {
     private NoInternetDialog noInternetDialog;
     private ProgressBar progressBar;
     private ImageView iv_ongoing;
+    private int flag;
+    private AlertDialog roomDetailDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +71,47 @@ public class OngoingMatchDetailActivity extends AppCompatActivity {
         Init();
 
         GetIntent();
+
+        //CHECKING FOR ROOM ID AND PASSWORD
+        DatabaseReference refRoom = FirebaseDatabase.getInstance().getReference("Matches").child(matchkey);
+        refRoom.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                final MatchDetail match = dataSnapshot.getValue(MatchDetail.class);
+                String matchShowID = match.getMatchIdShow();
+                if(matchShowID.equals("y")){
+                    refRoom.child("participants").addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            flag = 0;
+                            for(DataSnapshot data: dataSnapshot.getChildren()) {
+                                final UserProfile userProfile = data.getValue(UserProfile.class);
+                                String participant_uid = userProfile.getUid();
+                                String my_uid = firebaseAuth.getUid();
+                                if(my_uid.equals(participant_uid)){
+                                    flag = 1;
+                                    break;
+                                }
+                            }
+                            if(flag==1){
+                                showRoomDetailDialog();
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
         rvParticipant = findViewById(R.id.activity_ongoing_match_detail_rv);
         final LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         rvParticipant.setLayoutManager(linearLayoutManager);
@@ -319,5 +364,55 @@ public class OngoingMatchDetailActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         noInternetDialog.onDestroy();
+    }
+
+    private void showRoomDetailDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(OngoingMatchDetailActivity.this);
+        View view = getLayoutInflater().inflate(R.layout.roomdetails_layout, null);
+
+        TextView tv_roomID = view.findViewById(R.id.roomdetails_layout_roomid);
+        TextView tv_roomPassword = view.findViewById(R.id.roomdetails_layout_roompassword);
+
+        DatabaseReference myRef = FirebaseDatabase.getInstance().getReference("Matches").child(matchkey);
+
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                final MatchDetail m = dataSnapshot.getValue(MatchDetail.class);
+                String roomID = m.getMatchRoomId();
+                String roomPassword = m.getMatchRoomPassword();
+                tv_roomID.setText(roomID);
+                tv_roomPassword.setText(roomPassword);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+        Button btn_cancel = view.findViewById(R.id.roomdetails_layout_btn_cancel);
+        Button btn_play = view.findViewById(R.id.roomdetails_layout_btn_play);
+
+        btn_cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                roomDetailDialog.dismiss();
+            }
+        });
+
+        btn_play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        builder.setView(view);
+        roomDetailDialog = builder.create();
+        roomDetailDialog.setCancelable(false);
+        roomDetailDialog.setCanceledOnTouchOutside(false);
+        roomDetailDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        //show dialog
+        roomDetailDialog.show();
     }
 }

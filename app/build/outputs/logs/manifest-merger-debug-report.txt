@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#android.support.v4.content.FileProvider
-INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:77:9-85:20
+INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:82:9-90:20
 	android:grantUriPermissions
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:81:13-47
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:86:13-47
 	android:authorities
 		INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:79:13-60
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:84:13-60
 	android:exported
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:80:13-37
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:85:13-37
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:78:13-67
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:83:13-67
 manifest
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-114:12
-INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-114:12
-INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-114:12
-INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-114:12
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-116:12
+INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-116:12
+INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-116:12
+INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-116:12
 MERGED from [com.android.support:multidex:1.0.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b7fd72c9e4df5b179c65109a90d93575\AndroidManifest.xml:17:1-22:12
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\3738549e6bacbd2f22f4bf79bc86625a\AndroidManifest.xml:17:1-32:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b9888489abd3b6fab6bb6d1091f37f00\AndroidManifest.xml:17:1-24:12
@@ -23,6 +23,7 @@ MERGED from [com.github.mohammadatif:Animatoo:master] C:\Users\ShubhamRaj\.gradl
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\f2472b4aa25ed9bdfec4291668930b1c\AndroidManifest.xml:2:1-12:12
 MERGED from [com.github.yalantis:ucrop:2.2.2] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\0a71611014aaa420230fcb1239d4e123\AndroidManifest.xml:2:1-11:12
 MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b9ecf9a7da69ce1cd83985661c2bde3e\AndroidManifest.xml:2:1-14:12
+MERGED from [com.github.aabhasr1:OtpView:1.0.6] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\1f2a9c3d59f09ef56b1abd43a74b5231\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\81f5184aa764676cb5701dbb02a096fc\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\a12c7ff5d239ef73e889a010b92ffd31\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\5c571904de0ec189b19d3d9297ba68f6\AndroidManifest.xml:17:1-22:12
@@ -57,9 +58,11 @@ MERGED from [com.mikhaellopez:circularimageview:3.2.0] C:\Users\ShubhamRaj\.grad
 MERGED from [com.wang.avi:library:2.1.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b85ed16e0ca4406b0eeaebe7c9e2f302\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.hassanusman:CircularDialogs:1.2] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\fb0ed9fa8a05b337822b1392c8283fec\AndroidManifest.xml:2:1-13:12
 MERGED from [cn.pedant.sweetalert:library:1.2] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\f3e7d1f2299aba1a141973e66044f0c1\AndroidManifest.xml:2:1-13:12
+MERGED from [com.pranavpandey.android:dynamic-toasts:1.3.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\7f06746f477e2e470995f1bbcc60db96\AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\50dd274ab9c261f5b0dae7d8fcdf8bf3\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\bb8bc45e3306364486e751aceb6babd3\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\747628d527cc8ccca4cdcf20ee7387b5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.pranavpandey.android:dynamic-utils:1.3.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\9a11763b55dcb7b19e73fdfd9f4ff264\AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\c6204b279ac36f38eaebab50197b56c2\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\9dbd19ef895981904924c3f6776ca650\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\d029e8a64fdabc4bfd4c5fbd88a31489\AndroidManifest.xml:17:1-22:12
@@ -87,27 +90,27 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\ShubhamRaj\.gr
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\a2ae2b073895ede841b69099abc10c6c\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-config-license:11.6.2] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\995c32d7756d62311c97ac9d5ee72982\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\204a1deb25337ccab61e12e2d3edfc78\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-114:12
-INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-114:12
-INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-114:12
+INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-116:12
+INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-116:12
+INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-116:12
 	package
 		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:4:5-37
 		INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-114:12
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-116:12
 		INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-114:12
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:1-116:12
 		INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:6:5-97:19
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:6:5-100:19
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\3738549e6bacbd2f22f4bf79bc86625a\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\3738549e6bacbd2f22f4bf79bc86625a\AndroidManifest.xml:26:5-30:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b9888489abd3b6fab6bb6d1091f37f00\AndroidManifest.xml:22:5-20
@@ -187,222 +190,232 @@ MERGED from [com.google.firebase:firebase-config-license:11.6.2] C:\Users\Shubha
 		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:13:9-38
 	android:name
 		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:7:9-38
+activity#com.example.pubgbattle.OtpVerificationActivity
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:14:9-16:20
+	android:screenOrientation
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:15:13-49
+	android:name
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:14:19-58
 activity#com.example.pubgbattle.UpdateAppActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:14:9-64
-	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:14:19-52
-activity#com.example.pubgbattle.MyStatsActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:15:9-53
-	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:15:19-50
-activity#com.example.pubgbattle.MyReferralsActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:16:9-18:52
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:17:9-18:51
 	android:screenOrientation
 		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:18:13-49
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:17:13-48
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:17:19-52
+activity#com.example.pubgbattle.MyStatsActivity
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:19:9-20:51
+	android:screenOrientation
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:20:13-49
+	android:name
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:19:19-50
+activity#com.example.pubgbattle.MyReferralsActivity
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:21:9-23:52
+	android:screenOrientation
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:23:13-49
+	android:name
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:22:13-48
 activity#com.example.pubgbattle.PaymentActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:19:9-21:52
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:24:9-26:52
 	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:21:13-49
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:26:13-49
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:20:13-44
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:25:13-44
 activity#com.example.pubgbattle.ReferEarnActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:22:9-24:52
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:27:9-29:52
 	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:24:13-49
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:29:13-49
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:23:13-46
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:28:13-46
 activity#com.example.pubgbattle.ImagePickerActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:25:9-27:52
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:30:9-32:52
 	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:27:13-49
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:32:13-49
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:26:13-48
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:31:13-48
 activity#com.example.pubgbattle.TransactionActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:28:9-30:52
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:33:9-35:52
 	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:30:13-49
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:35:13-49
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:29:13-48
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:34:13-48
 activity#com.example.pubgbattle.RedeemActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:31:9-33:52
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:36:9-38:52
 	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:33:13-49
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:38:13-49
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:32:13-43
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:37:13-43
 activity#com.example.pubgbattle.BuyCoinActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:34:9-36:52
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:39:9-41:52
 	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:36:13-49
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:41:13-49
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:35:13-44
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:40:13-44
 activity#com.example.pubgbattle.WalletActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:37:9-39:52
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:42:9-44:52
 	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:39:13-49
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:44:13-49
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:38:13-43
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:43:13-43
 activity#com.example.pubgbattle.MatchResultActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:40:9-42:52
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:45:9-47:52
 	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:42:13-49
-	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:41:13-48
-activity#com.example.pubgbattle.OngoingMatchDetailActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:43:9-45:52
-	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:45:13-49
-	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:44:13-55
-activity#com.example.pubgbattle.JoiningMatchActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:46:9-48:52
-	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:48:13-49
-	android:name
 		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:47:13-49
+	android:name
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:46:13-48
+activity#com.example.pubgbattle.OngoingMatchDetailActivity
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:48:9-50:52
+	android:screenOrientation
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:50:13-49
+	android:name
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:49:13-55
+activity#com.example.pubgbattle.JoiningMatchActivity
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:51:9-53:52
+	android:screenOrientation
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:53:13-49
+	android:name
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:52:13-49
 activity#com.example.pubgbattle.UpcomingMatchDetailActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:49:9-51:52
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:54:9-56:52
 	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:51:13-49
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:56:13-49
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:50:13-56
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:55:13-56
 activity#com.example.pubgbattle.EditProfileActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:52:9-54:52
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:57:9-59:52
 	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:54:13-49
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:59:13-49
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:53:13-48
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:58:13-48
 activity#com.example.pubgbattle.LoginActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:55:9-63:20
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:60:9-68:20
 	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:57:13-49
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:62:13-49
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:56:13-42
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:61:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:58:13-62:29
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:63:13-67:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:59:17-69
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:64:17-69
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:59:25-66
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:64:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:61:17-77
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:66:17-77
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:61:27-74
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:66:27-74
 activity#com.example.pubgbattle.RegisterActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:64:9-66:52
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:69:9-71:52
 	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:66:13-49
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:71:13-49
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:65:13-45
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:70:13-45
 activity#com.example.pubgbattle.MainActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:67:9-69:52
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:72:9-74:52
 	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:69:13-49
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:74:13-49
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:68:13-41
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:73:13-41
 activity#com.yalantis.ucrop.UCropActivity
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:70:9-72:52
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:75:9-77:52
 	android:screenOrientation
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:72:13-49
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:77:13-49
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:71:13-60
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:76:13-60
 meta-data#preloaded_fonts
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:74:9-76:57
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:79:9-81:57
 	android:resource
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:76:13-54
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:81:13-54
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:75:13-43
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:80:13-43
 receiver#com.example.pubgbattle.ConnectivityReceiver
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:88:9-90:38
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:91:9-93:38
 	android:enabled
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:90:13-35
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:93:13-35
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:89:13-49
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:92:13-49
 service#com.example.pubgbattle.services.MyFirebaseMessagingService
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:92:9-96:19
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:95:9-99:19
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:92:18-69
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:95:18-69
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:93:13-95:29
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:96:13-98:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:94:17-78
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:97:17-78
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:94:25-75
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:97:25-75
 uses-feature#android.hardware.wifi
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:98:5-58
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:101:5-58
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:98:19-55
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:101:19-55
 uses-feature#android.hardware.camera
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:100:5-60
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:103:5-60
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:100:19-57
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:103:19-57
 uses-permission#android.permission.READ_SMS
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:101:5-67
-	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:101:22-64
-uses-permission#android.permission.RECEIVE_SMS
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:102:5-70
-	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:102:22-67
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:103:5-79
-MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\53087c830b3afdc7d5250f2b2449d2a1\AndroidManifest.xml:25:5-79
-MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\53087c830b3afdc7d5250f2b2449d2a1\AndroidManifest.xml:25:5-79
-MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b98c576d53de6f7178bff47e4c916506\AndroidManifest.xml:26:5-79
-MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b98c576d53de6f7178bff47e4c916506\AndroidManifest.xml:26:5-79
-MERGED from [com.google.firebase:firebase-iid:17.0.4] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\831b956d6f1fd3d35b4d2ff23939f5f3\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:17.0.4] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\831b956d6f1fd3d35b4d2ff23939f5f3\AndroidManifest.xml:22:5-79
-MERGED from [com.paytm:pgplussdk:1.3.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\c6b54220fe1399415227ae39c9107fec\AndroidManifest.xml:9:5-79
-MERGED from [com.paytm:pgplussdk:1.3.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\c6b54220fe1399415227ae39c9107fec\AndroidManifest.xml:9:5-79
-MERGED from [am.appwise.components:NoInternetDialog:1.1.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\f9ff7503e7bb224957f91b9fb0baa418\AndroidManifest.xml:12:5-79
-MERGED from [am.appwise.components:NoInternetDialog:1.1.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\f9ff7503e7bb224957f91b9fb0baa418\AndroidManifest.xml:12:5-79
-	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:103:22-76
-uses-permission#android.permission.INTERNET
 ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:104:5-67
-MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\53087c830b3afdc7d5250f2b2449d2a1\AndroidManifest.xml:26:5-67
-MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\53087c830b3afdc7d5250f2b2449d2a1\AndroidManifest.xml:26:5-67
-MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b98c576d53de6f7178bff47e4c916506\AndroidManifest.xml:27:5-67
-MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b98c576d53de6f7178bff47e4c916506\AndroidManifest.xml:27:5-67
-MERGED from [com.google.firebase:firebase-iid:17.0.4] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\831b956d6f1fd3d35b4d2ff23939f5f3\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:17.0.4] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\831b956d6f1fd3d35b4d2ff23939f5f3\AndroidManifest.xml:23:5-67
-MERGED from [am.appwise.components:NoInternetDialog:1.1.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\f9ff7503e7bb224957f91b9fb0baa418\AndroidManifest.xml:11:5-67
-MERGED from [am.appwise.components:NoInternetDialog:1.1.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\f9ff7503e7bb224957f91b9fb0baa418\AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:104:22-64
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:105:5-70
+	android:name
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:105:22-67
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:106:5-79
+MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\53087c830b3afdc7d5250f2b2449d2a1\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\53087c830b3afdc7d5250f2b2449d2a1\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b98c576d53de6f7178bff47e4c916506\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b98c576d53de6f7178bff47e4c916506\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.4] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\831b956d6f1fd3d35b4d2ff23939f5f3\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.4] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\831b956d6f1fd3d35b4d2ff23939f5f3\AndroidManifest.xml:22:5-79
+MERGED from [com.paytm:pgplussdk:1.3.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\c6b54220fe1399415227ae39c9107fec\AndroidManifest.xml:9:5-79
+MERGED from [com.paytm:pgplussdk:1.3.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\c6b54220fe1399415227ae39c9107fec\AndroidManifest.xml:9:5-79
+MERGED from [am.appwise.components:NoInternetDialog:1.1.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\f9ff7503e7bb224957f91b9fb0baa418\AndroidManifest.xml:12:5-79
+MERGED from [am.appwise.components:NoInternetDialog:1.1.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\f9ff7503e7bb224957f91b9fb0baa418\AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:106:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:107:5-67
+MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\53087c830b3afdc7d5250f2b2449d2a1\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\53087c830b3afdc7d5250f2b2449d2a1\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b98c576d53de6f7178bff47e4c916506\AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-storage:17.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b98c576d53de6f7178bff47e4c916506\AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.4] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\831b956d6f1fd3d35b4d2ff23939f5f3\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.4] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\831b956d6f1fd3d35b4d2ff23939f5f3\AndroidManifest.xml:23:5-67
+MERGED from [am.appwise.components:NoInternetDialog:1.1.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\f9ff7503e7bb224957f91b9fb0baa418\AndroidManifest.xml:11:5-67
+MERGED from [am.appwise.components:NoInternetDialog:1.1.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\f9ff7503e7bb224957f91b9fb0baa418\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:107:22-64
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:105:5-76
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:108:5-76
 MERGED from [am.appwise.components:NoInternetDialog:1.1.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\f9ff7503e7bb224957f91b9fb0baa418\AndroidManifest.xml:13:5-76
 MERGED from [am.appwise.components:NoInternetDialog:1.1.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\f9ff7503e7bb224957f91b9fb0baa418\AndroidManifest.xml:13:5-76
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:105:22-73
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:108:22-73
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:106:5-65
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:109:5-65
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:106:22-62
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:109:22-62
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:107:5-80
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:110:5-80
 MERGED from [com.paytm:pgplussdk:1.3.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\c6b54220fe1399415227ae39c9107fec\AndroidManifest.xml:11:5-80
 MERGED from [com.paytm:pgplussdk:1.3.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\c6b54220fe1399415227ae39c9107fec\AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:107:22-77
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:110:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:108:5-81
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:111:5-81
 MERGED from [com.paytm:pgplussdk:1.3.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\c6b54220fe1399415227ae39c9107fec\AndroidManifest.xml:10:5-81
 MERGED from [com.paytm:pgplussdk:1.3.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\c6b54220fe1399415227ae39c9107fec\AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:108:22-78
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:111:22-78
 uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:109:5-82
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:112:5-83
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:109:22-80
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:112:22-80
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:112:5-82
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:114:5-82
 MERGED from [com.google.firebase:firebase-iid:17.0.4] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\831b956d6f1fd3d35b4d2ff23939f5f3\AndroidManifest.xml:26:5-82
 MERGED from [com.google.firebase:firebase-iid:17.0.4] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\831b956d6f1fd3d35b4d2ff23939f5f3\AndroidManifest.xml:26:5-82
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:112:22-79
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:114:22-79
 uses-sdk
 INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml
@@ -423,6 +436,8 @@ MERGED from [com.github.yalantis:ucrop:2.2.2] C:\Users\ShubhamRaj\.gradle\caches
 MERGED from [com.github.yalantis:ucrop:2.2.2] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\0a71611014aaa420230fcb1239d4e123\AndroidManifest.xml:7:5-9:41
 MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b9ecf9a7da69ce1cd83985661c2bde3e\AndroidManifest.xml:8:5-10:41
 MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\b9ecf9a7da69ce1cd83985661c2bde3e\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.aabhasr1:OtpView:1.0.6] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\1f2a9c3d59f09ef56b1abd43a74b5231\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.aabhasr1:OtpView:1.0.6] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\1f2a9c3d59f09ef56b1abd43a74b5231\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\81f5184aa764676cb5701dbb02a096fc\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\81f5184aa764676cb5701dbb02a096fc\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\a12c7ff5d239ef73e889a010b92ffd31\AndroidManifest.xml:5:5-7:41
@@ -491,12 +506,16 @@ MERGED from [com.github.hassanusman:CircularDialogs:1.2] C:\Users\ShubhamRaj\.gr
 MERGED from [com.github.hassanusman:CircularDialogs:1.2] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\fb0ed9fa8a05b337822b1392c8283fec\AndroidManifest.xml:7:5-9:41
 MERGED from [cn.pedant.sweetalert:library:1.2] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\f3e7d1f2299aba1a141973e66044f0c1\AndroidManifest.xml:7:5-9:41
 MERGED from [cn.pedant.sweetalert:library:1.2] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\f3e7d1f2299aba1a141973e66044f0c1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.pranavpandey.android:dynamic-toasts:1.3.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\7f06746f477e2e470995f1bbcc60db96\AndroidManifest.xml:22:5-24:41
+MERGED from [com.pranavpandey.android:dynamic-toasts:1.3.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\7f06746f477e2e470995f1bbcc60db96\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\50dd274ab9c261f5b0dae7d8fcdf8bf3\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\50dd274ab9c261f5b0dae7d8fcdf8bf3\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\bb8bc45e3306364486e751aceb6babd3\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\bb8bc45e3306364486e751aceb6babd3\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\747628d527cc8ccca4cdcf20ee7387b5\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\747628d527cc8ccca4cdcf20ee7387b5\AndroidManifest.xml:20:5-44
+MERGED from [com.pranavpandey.android:dynamic-utils:1.3.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\9a11763b55dcb7b19e73fdfd9f4ff264\AndroidManifest.xml:22:5-24:41
+MERGED from [com.pranavpandey.android:dynamic-utils:1.3.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\9a11763b55dcb7b19e73fdfd9f4ff264\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\c6204b279ac36f38eaebab50197b56c2\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\c6204b279ac36f38eaebab50197b56c2\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\9dbd19ef895981904924c3f6776ca650\AndroidManifest.xml:20:5-44
@@ -562,11 +581,11 @@ INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManif
 		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:82:13-84:54
+ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:87:13-89:54
 	android:resource
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:84:17-51
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:89:17-51
 	android:name
-		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:83:17-67
+		ADDED from C:\Users\ShubhamRaj\Desktop\project\Pubg\app\src\main\AndroidManifest.xml:88:17-67
 activity#com.karumi.dexter.DexterActivity
 ADDED from [com.karumi:dexter:5.0.0] C:\Users\ShubhamRaj\.gradle\caches\transforms-2\files-2.1\3738549e6bacbd2f22f4bf79bc86625a\AndroidManifest.xml:27:9-29:72
 	android:theme

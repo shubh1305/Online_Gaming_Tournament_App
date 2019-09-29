@@ -152,6 +152,14 @@ public class JoiningMatchActivity extends AppCompatActivity {
                 DisplayJoinDialog();
             }
         });
+
+        btn_buy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(JoiningMatchActivity.this, BuyCoinActivity.class));
+                finish();
+            }
+        });
     }
 
     private void CreateNotificationChannel() {

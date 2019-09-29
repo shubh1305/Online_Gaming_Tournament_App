@@ -63,4 +63,7 @@
     <string name="write_file">This app needs access to your file storage so that it can write files.</string>
     <string name="term_refer">*T&amp;C</string>
     <string name="note">Note: In order to continue using the app, you must have to update the app to the latest version.</string>
+    <string name="redeem_done">You have successfully submitted the request for the coin redeemption. The amount will be credited into your registered Paytm account within 24 hours. Keep playing and keep winnning.</string>
+    <string name="roomdetail">Make sure to join the room before the match starting time. Once the match starts, you won\'t be able to join.</string>
+    <string name="howtoplay"><u>How to Join Room? Click Here</u></string>
 </resources>

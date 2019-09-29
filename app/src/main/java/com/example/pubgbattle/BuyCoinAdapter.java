@@ -3,6 +3,7 @@ package com.example.pubgbattle;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -10,9 +11,11 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class BuyCoinAdapter extends RecyclerView.Adapter<BuyCoinAdapter.MyViewHolder> {
 
@@ -28,12 +31,14 @@ public class BuyCoinAdapter extends RecyclerView.Adapter<BuyCoinAdapter.MyViewHo
     class MyViewHolder extends RecyclerView.ViewHolder{
         TextView tv1, tv2;
         CardView cv;
+        RelativeLayout rl;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             tv1 = itemView.findViewById(R.id.buy_coin_layout_tv);
             tv2 = itemView.findViewById(R.id.buy_coin_layout_tv2);
             cv = itemView.findViewById(R.id.buy_coin_layout_cv);
+            rl = itemView.findViewById(R.id.buy_coin_layout_rl1);
         }
     }
 
@@ -51,6 +56,9 @@ public class BuyCoinAdapter extends RecyclerView.Adapter<BuyCoinAdapter.MyViewHo
         final int position = i;
         myViewHolder.tv1.setText(""+ coins.get(i).getValue());
         myViewHolder.tv2.setText(""+ coins.get(i).getValue());
+        Random rnd = new Random();
+        int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
+        myViewHolder.rl.setBackgroundColor(color);
         if(i == 0){
             ViewGroup.MarginLayoutParams layoutParams =
                     (ViewGroup.MarginLayoutParams) myViewHolder.cv.getLayoutParams();

@@ -53,7 +53,7 @@ public class OngoingMatchAdapter extends RecyclerView.Adapter<OngoingMatchAdapte
         px = Math.round(TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_DIP, 12,r.getDisplayMetrics()));
         px2 = Math.round(TypedValue.applyDimension(
-                TypedValue.COMPLEX_UNIT_DIP, 180,r.getDisplayMetrics()));
+                TypedValue.COMPLEX_UNIT_DIP, 200,r.getDisplayMetrics()));
         return new OngoingMatchAdapter.MyViewHolder(LayoutInflater.from(context).inflate(R.layout.ongoing_cardview, viewGroup, false));
     }
 
@@ -199,9 +199,8 @@ public class OngoingMatchAdapter extends RecyclerView.Adapter<OngoingMatchAdapte
             cardView = itemView.findViewById(R.id.ongoing_cardview);
             btn_spectate = itemView.findViewById(R.id.ongoing_cardview_btn_spectate);
             btn_play = itemView.findViewById(R.id.ongoing_cardview_btn_play);
-            //progressBar = itemView.findViewById(R.id.ongoing_cardview_progress);
             iv_ongoing = itemView.findViewById(R.id.ongoing_cardview_img);
-            avi = itemView.findViewById(R.id.ongoing_cardview);
+            avi = itemView.findViewById(R.id.ongoing_cardview_avi);
 
         }
     }

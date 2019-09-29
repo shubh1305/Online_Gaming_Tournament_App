@@ -1,6 +1,7 @@
 package com.example.pubgbattle;
 
 import android.Manifest;
+import android.app.ProgressDialog;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Build;
@@ -52,6 +53,7 @@ public class BuyCoinActivity extends AppCompatActivity {
     private RecyclerView rv_coin;
     private ArrayList<Coin> coins;
     private BuyCoinAdapter adapter;
+    private ProgressDialog progressDialog;
 
 
     @Override
@@ -81,6 +83,9 @@ public class BuyCoinActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("just a sec...");
+        progressDialog.show();
         DatabaseReference myRef = FirebaseDatabase.getInstance().getReference("Coins");
         //initialising recyclerview
         rv_coin = findViewById(R.id.activity_buy_coin_rv);
@@ -127,11 +132,13 @@ public class BuyCoinActivity extends AppCompatActivity {
                     }
                 });
                 adapter.notifyDataSetChanged();
+                progressDialog.dismiss();
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Toast.makeText(BuyCoinActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
+                progressDialog.dismiss();
             }
         });
     }

@@ -2,7 +2,7 @@ package com.example.pubgbattle;
 
 public class MatchDetail {
     private String MatchTitle, MatchDate, MatchTime, MatchType, MatchVersion, MatchMap, MatchStatus, MatchKey, MatchWatchLink, MatchPic,
-    MatchIdShow;
+    MatchIdShow,MatchRoomId, MatchRoomPassword;
     private int MatchWinningPrize, MatchPerKill, MatchEntryFee, MatchTotalSpot, MatchOccupiedSpot;
 
     public MatchDetail() {
@@ -12,7 +12,7 @@ public class MatchDetail {
     public MatchDetail(String matchKey, String matchTitle, String matchDate, String matchTime, String matchType,
                        String matchVersion, String matchMap, String matchStatus, int matchWinningPrize,
                        int matchPerKill, int matchEntryFee, int matchTotalSpot, int matchOccupiedSpot, String matchIdShow,
-                       String matchWatchLink, String matchPic) {
+                       String matchWatchLink, String matchPic, String matchRoomId, String matchRoomPassword) {
         this.MatchKey = matchKey;
         this.MatchTitle = matchTitle;
         this.MatchDate = matchDate;
@@ -29,6 +29,24 @@ public class MatchDetail {
         this.MatchIdShow = matchIdShow;
         this.MatchWatchLink = matchWatchLink;
         this.MatchPic = matchPic;
+        this.MatchRoomId = matchRoomId;
+        this.MatchRoomPassword = matchRoomPassword;
+    }
+
+    public String getMatchRoomPassword() {
+        return MatchRoomPassword;
+    }
+
+    public void setMatchRoomPassword(String matchRoomPassword) {
+        MatchRoomPassword = matchRoomPassword;
+    }
+
+    public String getMatchRoomId() {
+        return MatchRoomId;
+    }
+
+    public void setMatchRoomId(String matchRoomId) {
+        MatchRoomId = matchRoomId;
     }
 
     public String getMatchPic() {

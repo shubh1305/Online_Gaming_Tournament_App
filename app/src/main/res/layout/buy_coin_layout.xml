@@ -10,11 +10,12 @@
     android:foreground="?android:attr/selectableItemBackground"
     android:layout_marginBottom="12dp"
     android:layout_marginRight="10dp"
-    app:cardBackgroundColor="@color/bg_darkblue"
     android:layout_marginLeft="10dp">
 
     <RelativeLayout
+        android:id="@+id/buy_coin_layout_rl1"
         android:layout_width="match_parent"
+        android:background="@color/bg_darkblue"
         android:layout_height="match_parent">
 
         <LinearLayout

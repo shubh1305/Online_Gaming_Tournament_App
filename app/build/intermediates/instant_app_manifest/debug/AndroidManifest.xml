@@ -35,8 +35,16 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.pubgbattle.UpdateAppActivity" />
-        <activity android:name="com.example.pubgbattle.MyStatsActivity" />
+        <activity
+            android:name="com.example.pubgbattle.OtpVerificationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.pubgbattle.UpdateAppActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.pubgbattle.MyStatsActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.pubgbattle.MyReferralsActivity"
             android:screenOrientation="portrait" />
@@ -107,7 +115,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider> <!-- cache directory file provider paths -->
-
         <receiver
             android:name="com.example.pubgbattle.ConnectivityReceiver"
             android:enabled="true" />

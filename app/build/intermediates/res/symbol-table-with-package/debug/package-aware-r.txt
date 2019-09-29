@@ -139,6 +139,17 @@ attr backgroundStacked
 attr backgroundTint
 attr backgroundTintMode
 attr barLength
+attr bar_active_color
+attr bar_enabled
+attr bar_error_color
+attr bar_height
+attr bar_inactive_color
+attr bar_margin
+attr bar_margin_bottom
+attr bar_margin_left
+attr bar_margin_right
+attr bar_margin_top
+attr bar_success_color
 attr barrierAllowsGoneWidgets
 attr barrierDirection
 attr behavior_autoHide
@@ -162,6 +173,11 @@ attr boxCornerRadiusTopEnd
 attr boxCornerRadiusTopStart
 attr boxStrokeColor
 attr boxStrokeWidth
+attr box_margin
+attr box_margin_bottom
+attr box_margin_left
+attr box_margin_right
+attr box_margin_top
 attr buttonBarButtonStyle
 attr buttonBarNegativeButtonStyle
 attr buttonBarNeutralButtonStyle
@@ -367,6 +383,8 @@ attr helperTextTextAppearance
 attr hideMotionSpec
 attr hideOnContentScroll
 attr hideOnScroll
+attr hide_otp
+attr hide_otp_drawable
 attr hintAnimationEnabled
 attr hintEnabled
 attr hintTextAppearance
@@ -468,6 +486,7 @@ attr layout_keyline
 attr layout_optimizationLevel
 attr layout_scrollFlags
 attr layout_scrollInterpolator
+attr length
 attr liftOnScroll
 attr lineHeight
 attr lineSpacing
@@ -501,6 +520,13 @@ attr navigationIcon
 attr navigationMode
 attr navigationViewStyle
 attr numericModifiers
+attr otp
+attr otp_box_background
+attr otp_box_background_active
+attr otp_box_background_error
+attr otp_box_background_inactive
+attr otp_box_background_success
+attr otp_text_size
 attr overlapAnchor
 attr paddingBottomNoButtons
 attr paddingEnd
@@ -658,6 +684,7 @@ attr textColorSearchUrl
 attr textEndPadding
 attr textInputStyle
 attr textStartPadding
+attr text_typeface
 attr theme
 attr thickness
 attr thumbTextPadding
@@ -711,6 +738,7 @@ attr use_legacy_parser
 attr vector_src
 attr viewInflaterClass
 attr voiceIcon
+attr width
 attr windowActionBar
 attr windowActionBarOverlay
 attr windowActionModeOverlay
@@ -833,6 +861,7 @@ color gray
 color gray_btn_bg_color
 color gray_btn_bg_pressed_color
 color green
+color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color inActive_state_submit_button
@@ -889,6 +918,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color red
 color red_btn_bg_color
 color red_btn_bg_pressed_color
 color ripple_material_dark
@@ -1013,6 +1043,16 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen adt_font_hint
+dimen adt_font_toast
+dimen adt_icon_hint
+dimen adt_icon_toast
+dimen adt_margin_hint_right_left
+dimen adt_margin_hint_small
+dimen adt_margin_hint_top_bottom
+dimen adt_margin_toast_right_left
+dimen adt_margin_toast_small
+dimen adt_margin_toast_top_bottom
 dimen button_size
 dimen button_size2
 dimen button_text_size
@@ -1280,6 +1320,11 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable action_button_bg
 drawable action_gray_button
+drawable adt_hint_background
+drawable adt_ic_error
+drawable adt_ic_success
+drawable adt_ic_warning
+drawable adt_toast_background
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_remove_red_eye_black_18dp
@@ -1288,10 +1333,15 @@ drawable bg2
 drawable bg3
 drawable bg4
 drawable bg_btn_blue
+drawable bg_pin
 drawable blue_button_background
 drawable border
 drawable border_circular
 drawable bottom_nav_color_list
+drawable box_border_active
+drawable box_border_green
+drawable box_border_inactive
+drawable box_border_red
 drawable button_brown
 drawable button_brown_disabled
 drawable button_grey
@@ -1372,6 +1422,7 @@ drawable ic_coins
 drawable ic_coins_group
 drawable ic_console_1
 drawable ic_dot
+drawable ic_down
 drawable ic_download
 drawable ic_eye_invisible
 drawable ic_eye_visible
@@ -1382,7 +1433,6 @@ drawable ic_group
 drawable ic_hide_passcode
 drawable ic_image_upload
 drawable ic_invite
-drawable ic_launcher
 drawable ic_launcher2
 drawable ic_launcher3
 drawable ic_launcher_background
@@ -1461,6 +1511,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable otp_done
+drawable otp_send
+drawable otp_verify
 drawable oval
 drawable pattern
 drawable paytm_assist
@@ -1635,6 +1688,21 @@ id activity_ongoing_match_detail_tv_title
 id activity_ongoing_match_detail_tv_type
 id activity_ongoing_match_detail_tv_version
 id activity_ongoing_match_detail_tv_winningprize
+id activity_otp_verifictaion_avi
+id activity_otp_verifictaion_btn_done
+id activity_otp_verifictaion_btn_manual
+id activity_otp_verifictaion_btn_resend
+id activity_otp_verifictaion_btn_send
+id activity_otp_verifictaion_btn_verify
+id activity_otp_verifictaion_code
+id activity_otp_verifictaion_layout_done
+id activity_otp_verifictaion_layout_send
+id activity_otp_verifictaion_layout_verify
+id activity_otp_verifictaion_mobile_no
+id activity_otp_verifictaion_otp
+id activity_otp_verifictaion_tv_number
+id activity_redeem_nsv
+id activity_redeem_rv
 id activity_redeem_toolbar
 id activity_refer_earn_back
 id activity_refer_earn_lin1
@@ -1650,7 +1718,6 @@ id activity_signup_btn_terms
 id activity_signup_btn_visible
 id activity_signup_checkbox
 id activity_signup_et_email
-id activity_signup_et_mobile_no
 id activity_signup_et_name
 id activity_signup_et_password
 id activity_signup_et_promocode
@@ -1691,6 +1758,12 @@ id activity_wallet_tv_playcoin
 id add
 id adjust_height
 id adjust_width
+id adt_hint
+id adt_hint_icon
+id adt_hint_text
+id adt_toast
+id adt_toast_icon
+id adt_toast_text
 id airplane_off
 id alertTitle
 id all
@@ -1721,6 +1794,7 @@ id button_submit_password
 id buttons
 id buy_coin_layout_cv
 id buy_coin_layout_iv
+id buy_coin_layout_rl1
 id buy_coin_layout_tv
 id buy_coin_layout_tv2
 id cancel_action
@@ -1770,6 +1844,7 @@ id dialog_btn_cancel
 id dialog_btn_reset
 id dialog_et_reset_registered_email
 id dialog_join_done_btn_done
+id dialog_redeem_done_btn
 id dialog_til_reset_registered_email
 id dialog_tv_error_msg
 id dimensions
@@ -1869,7 +1944,6 @@ id image_view_state_aspect_ratio
 id image_view_state_rotate
 id image_view_state_scale
 id imgView_emailIcon
-id imgView_mobileIcon
 id imgView_passwordIcon
 id imgView_promoIcon
 id imgView_userIcon
@@ -1964,6 +2038,11 @@ id ongoing_cardview_tv_version
 id ongoing_cardview_tv_winingprize
 id otpHelper
 id otp_hint
+id otp_verification_layout_avi
+id otp_verification_layout_btn
+id otp_verification_layout_lin
+id otp_verification_layout_number
+id otp_verification_layout_otp_view
 id outline
 id oval
 id overlay_webview
@@ -1990,13 +2069,17 @@ id radioOption2
 id radio_button1
 id radio_button2
 id rectangle
+id redeem_coin_layout_cv
+id redeem_coin_layout_lin1
+id redeem_coin_layout_tv1
+id redeem_coin_layout_tv2
+id redeem_coin_layout_tv3
 id referral_layout_date
 id referral_layout_playername
 id referral_layout_status
 id relativeLayout1
 id relativeLayout2
 id relativeLayout3
-id relativeLayout4
 id relativeLayout5
 id relativeLayout6
 id restart
@@ -2022,6 +2105,11 @@ id right_icon
 id right_side
 id right_to_left
 id rl
+id roomdetails_layout_btn_cancel
+id roomdetails_layout_btn_play
+id roomdetails_layout_roomid
+id roomdetails_layout_roompassword
+id roomdetails_layout_tv_howtojoin
 id root
 id rootLayout
 id rotate_scroll_wheel
@@ -2240,6 +2328,7 @@ layout activity_match_result
 layout activity_my_referrals
 layout activity_my_stats
 layout activity_ongoing_match_detail
+layout activity_otp_verification
 layout activity_payment
 layout activity_redeem
 layout activity_refer_earn
@@ -2248,6 +2337,8 @@ layout activity_transaction
 layout activity_upcoming_match_detail
 layout activity_update_app
 layout activity_wallet
+layout adt_layout_hint
+layout adt_layout_toast
 layout alert_dialog
 layout app_update_layout
 layout buy_coin_layout
@@ -2270,6 +2361,7 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout dialog_join_done
 layout dialog_no_internet
+layout dialog_redeem_done
 layout dialog_reset_done
 layout easy_pay_toolbar
 layout easypay_browser_fragment
@@ -2303,12 +2395,15 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout ongoing_cardview
+layout otp_verification_layout
 layout participants
 layout progress_dialog
 layout radio_selector
+layout redeem_coin_layout
 layout referral_layout
 layout reset_password_dialog
 layout result_cardview
+layout roomdetails_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2389,6 +2484,11 @@ string about_match_6
 string about_match_7
 string about_match_8
 string about_match_9
+string adu_bug_desc
+string adu_bug_title
+string adu_format_blank_space
+string adu_share_desc
+string adu_share_to
 string airplane
 string airplane_on
 string app_name
@@ -2450,6 +2550,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string howtoplay
 string invite
 string invite2
 string invite3
@@ -2483,9 +2584,11 @@ string path_password_strike_through
 string pick_image_intent_chooser_title
 string preferred_options
 string project_id
+string redeem_done
 string referral_msg
 string rember
 string reset_password_text
+string roomdetail
 string search_menu_title
 string select_option_pay
 string send_otp
@@ -3118,6 +3221,7 @@ styleable MenuGroup android_enabled android_id android_visible android_menuCateg
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconTint itemTextAppearance itemTextColor menu
+styleable OtpTextView android_textColor bar_active_color bar_enabled bar_error_color bar_height bar_inactive_color bar_margin bar_margin_bottom bar_margin_left bar_margin_right bar_margin_top bar_success_color box_margin box_margin_bottom box_margin_left box_margin_right box_margin_top height hide_otp hide_otp_drawable length otp otp_box_background otp_box_background_active otp_box_background_error otp_box_background_inactive otp_box_background_success otp_text_size text_typeface width
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
